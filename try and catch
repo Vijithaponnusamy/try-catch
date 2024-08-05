@@ -1,0 +1,24 @@
+import java.io.*; 
+import java.util.*;
+
+public class Solution { 
+    static int b; 
+    static int h; 
+    static int a;
+
+public static void main(String[] args) {
+    try {
+        Scanner c = new Scanner(System.in);
+        b = c.nextInt();
+        h = c.nextInt();
+        if (b <= 0 || h <= 0) {
+            throw new Exception("Breadth and height must be positive");
+        } else {
+            a = b * h;
+            System.out.println(a);
+        }
+    } catch (Exception e) {
+        System.out.println(e);
+    }
+}
+}
